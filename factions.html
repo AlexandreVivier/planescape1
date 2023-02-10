@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factions</title>
+    <link rel="icon" href="images/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="Style.css">
+    <link href="js/lightbox.css" rel="stylesheet" />
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+    <script type='text/javascript'>
+               
+                $(document).ready(function(){
+        $('a[href^="#"]').on('click',function (e) {
+            e.preventDefault();
+            var target = this.hash,
+            $target = $(target);
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 900, 'swing', function () {
+                window.location.hash = target;
+            });
+        });
+});
+</script>
+    
+<script>
+    $(function () {
+
+        $(".petite").click(function () {
+            var SourcePetiteImage = $(this).attr('src');
+            var SourceGrandeImage = SourcePetiteImage.replace("petites", "grandes");
+            $(".grande").html("<img src='" + SourceGrandeImage + "'>");
+            $(".grande").fadeIn("slow").css("display", "flex");
+        });
+    
+        $(".grande").click(function () {
+            $(".grande").fadeOut("fast");
+        });
+    
+    });
+     
+    </script>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/lightbox-2.6.min.js"></script>
+</head>
+
+<body>
+    <header id="top"> 
+        <a href="#start">
+        <img src="images/banner.png" alt="bannière" sizes="(max-width: 1020px) 240px, 300px, 780px" srcset="images/banner.png 400w, images/banner.png 600w, images/banner.png 800w"  id="banner" />
+    </a>
+    <h1>Les Factions</h1>
+    </header>
+    <div id="square">
+        <nav>
+            <ul class="boite">
+                <li class="menu">
+                    <a href="sigil.html" class="menubouton">
+                        <h2 class="menutitre">Sigil</h2>
+                    </a>
+                </li>
+                <li class="menu">
+                    <a href="plans.html" class="menubouton">
+                        <h2 class="menutitre">Plans</h2>
+                    </a>
+                </li>
+                <li class="menu">
+                    <a href="principes.html" class="menubouton">
+                    <h2 class="menutitre">Principes</h2>
+                </a>
+                </li>
+                <li class="menu">
+                    <a href="races.html" class="menubouton">
+                    <h2 class="menutitre">Races</h2>
+                </a>    
+            </li>
+                    <li class="menu">
+                        <a href="factions.html" class="menubouton">
+                        <h2 class="menutitre">Factions</h2>
+                        </a>    
+                    </li>
+                </ul>
+            </nav>
+<ul>
+    <h2 id="start">Retour sur les factions</h2>
+    <p>Si tant est que vos
+        souvenirs vous échappent encore
+        quelque peu, ce qu’il est
+        important de vous remettre en
+        tête, c’est le contexte politique
+        de votre cité, et les dogmes des
+        factions. Je
+        sais bien que vos propres enseignements sont
+        suffisamment ancrés en vous pour résister à
+        tout choc, mais il n’est en pas forcément de
+        même de ceux de vos rivaux. Je m’excuse par
+        avance, si, dans ma volonté de faire succinct,
+        j’écorne un peu la subtilité de vos philosophies respectives
+        par des simplifications trop hâtives. Je
+        ne doute pas que vous pourrez rectifiez mes
+        errements auprès de vos pairs si besoin est.</p>
+        <li id="factionordre">La Triade de l’Ordre.</li>
+    <p>Je commencerai
+        par la <a href="principes.html#trois" target="_blank">triade de l’Ordre</a>, que constitue la
+        Fraternité de l’Ordre, L’Harmonium et les Rectifieurs.
+        Ces trois factions, clairement orientées
+        du côté de la Loi et qui ont toutes leur Siège
+        au sein du plus riche quartier de <a href="sigil.html" target="_blank">Sigil</a>, le Quartier
+        de la <a href="sigil.html#dame" target="_blank">Dame</a>, sont les rouages du système
+        judiciaire de Sigil.</p>
+        <li id="harmonium">L’Harmonium.</li>
+        <p>
+            <img src="images/factions/harmonium.png" class="gallerieleft puce" id="pucefaction" alt="puce harmonium" />
+            <img src="lightbox/img/petites/harmonium.jpg" title="agrandir." class="gallerieright factol petite" alt="Harmonium" />
+            L’<em>Harmonium</em>, dont le
+            credo est la recherche de l’harmonie et de la
+            paix sociale à tout prix, a pour charge l’arrestation
+            des criminels. Basés dans les Casernes
+            de la Cité, les membres de cette faction considèrent
+            détenir les clés d’une société harmonieuse,
+            et combattent avec virulence tout fauteur
+            de trouble. En effet, s’il faut la guerre pour
+            obtenir la paix, l’Harmonium ne reculera pas
+            devant ce maigre sacrifice. Cette conception un
+            peu martiale de la paix, associée à leur sentiment
+            inébranlable de détenir la vérité, les a fait
+            surnommer les Têtes-dures.</p>
+<li id="fraternite">La Fraternité de l’Ordre.</li>
+
+        <p><img src="images/factions/fraternite.png" class="gallerieleft puce" id="pucefaction" alt="puce harmonium" />
+            <img src="lightbox/img/petites/fraternitedelordre.jpg" title="agrandir." class="gallerieright factol petite" alt="Fraternité de l'Ordre" />
+            Une fois
+            arrêté, un suspect est remis à la <em>Fraternité de
+            l’Ordre</em>, qui chérit l’Ordre, et voit dans la Loi
+            le fondement du <a href="plans.html" target="_blank">multivers</a>. En effet, selon eux,
+            toute chose a des lois, que ce soit des lois de
+            convention comme celles qui régissent la société,
+            ou des lois immuables comme celles qui
+            régissent la nature ou la magie. Ses membres
+            se consacrent à l’étude et la découverte de ses
+            lois, seul moyen de contrôler les phénomènes
+            qui en résultent. On les surnomme les Greffiers,
+            et ce sont eux qui ont pour rôle, en se basant
+            sur leur connaissance aigüe des lois, de juger
+            les suspects qui sont amenés au Grand Tribunal,
+            leur QG. Leur rôle se limite à décider de
+            la culpabilité ou non du suspect.</p>
+<li id="rectifieur">Les Rectifieurs.</li>
+
+        <p><img src="images/factions/rectifieurs.png" class="gallerieleft puce" id="pucefaction" alt="puce rectifieur" />
+            <img src="lightbox/img/petites/rectifieur.jpg" title="agrandir." class="gallerieright factol petite" alt="Rectifieurs" />
+            Tout suspect déclaré
+            coupable est alors confié aux <em>Rectifieurs</em>,
+            qui ont la charge de déterminer et d’appliquer
+            sa peine. Ceux-ci, établis dans la Prison de
+            <a href="sigil.html" target="_blank">Sigil</a>, considère que le principe dominant du
+            multivers est celui de Justice. Nul ne doit pouvoir
+            échapper à ses crimes, et nul innocent ne
+            doit être injustement puni. Cette faction a véritablement
+            à coeur de s’assurer que
+            telle justice
+            soit rendue,
+            et leur persévérance à poursuivre
+            les criminels reconnus pour appliquer la sentence
+            leur a valu le surnom de Mort Rouge.</p>
+    <li id="garde fatale">La Garde Fatale.</li>
+   
+                <p> <img src="images/factions/gardefatale.png" class="gallerieleft puce" id="pucefaction" alt="puce garde" />
+                    <img src="lightbox/img/petites/gardefatale.jpg" title="agrandir." class="gallerieright factol petite" alt="Garde Fatale" />Toujours dans le quartier
+                    de la <a href="sigil.html#dame" target="_blank">Dame</a>, à la lisère du Bas quartier, se
+                    trouve aussi l’Armurerie, qui abrite la faction de
+                    la <em>Garde Fatale</em>, dont la philosophie est bien différente.
+                    Ces derniers affirment en effet que l’Entropie
+                    est le principe directeur du <a href="plans.html" target="_blank">multivers</a>. Toute
+                    chose va vers sa destruction, multivers compris, et
+                    il n’y a pas lieu d’y résister, car cette destruction
+                    est la marche naturelle des plans. Les membres
+                    de la Garde Fatale embrasse l’impermanence des
+                    choses, et s’opposent
+                    généralement
+                    aux tentatives
+                    de ceux qui voudraient
+                    retarder l’inéluctable,
+                    se délectant du spectacle
+                    de l’entropie. C’est pour
+                    cela que les Sombreurs, comme on
+                    les surnomme, vendent des armes, outil
+                    construit pour détruire.</p>
+            <li id="source">Les Adorateurs de la Source.</li>
+            
+                <p><img src="images/factions/hommesdieux.png" class="gallerieleft puce" id="pucefaction" alt="puce Source" />
+                    <img src="lightbox/img/petites/adorateursdelasource.jpg" title="agrandir." class="gallerieright factol petite" alt="adorateurs de la Source" />
+                    A l’opposé
+                    de cela, les <em>Adorateurs de la Source</em> voient
+                    dans l’image de la forge celle d’une mise
+                    en forme de la matière qui se fond en
+                    quelque chose de supérieur au matériau
+                    initial par l’épreuve du feu. Installés
+                    dans la Grande Fonderie de la
+                    cité, au coeur du Bas Quartier,
+                    qui fournit de nombreux outils
+                    aux habitants de la
+                    <a href="sigil.html" target="_blank">Cage</a>, ces factionnaires
+                    considèrent que chaque
+                    individu voit sa destinée
+                    et sa nature mêmeforgée par ses propres actes. Chaque acte a
+                    des conséquences, qu’il y ait ou non des témoins,
+                    car le multivers teste chaque individu,
+                    et forge sa nature et son caractère au travers
+                    des épreuves et choix qu’il lui soumet. Ainsi, celui
+                    qui sait faire les bons choix affine sa nature,
+                    et s’élève. Ses actes déterminent sa vie future,
+                    et cela au delà de son enveloppe matérielle, car
+                    les êtres sont tous issus d’une même Source,
+                    s’élevant vers des formes supérieures quand
+                    leurs actes répondent aux tests du <a href="plans.html" target="_blank">multivers</a>,
+                    ou au contraire, retournant à des formes plus
+                    basiques. Cette croyance dans le potentiel de
+                    chacun, et la possibilité que tout être puissent
+                    accéder aux formes les plus élevées, telle que la
+                    divinité, leur vaut le surnom d’Homme-Dieux.</p>
+            <li id="athar">Les Athars.</li>
+
+                    <p>            
+                        <img src="images/factions/athar.png" class="gallerieleft puce" id="pucefaction" alt="puce athar" />
+                        <img src="lightbox/img/petites/athar.jpg" title="agrandir." class="gallerieright factol petite" alt="Athars" />
+                        Mais tout
+                        le monde ne considère
+                        pas les Divinités comme
+                        une forme supérieure,
+                        et une faction entière
+                        s’est dévouée à
+                        dénoncer leurs mensonges.
+                        Les <em>Athars</em>,
+                        en effet, se consacrent
+                        à la lutte contre les imposteurs
+                        que sont ces Puissances qui réclament la
+                        foi des masses. Nul ne peut se prétendre Dieu
+                        et réclamer l’adoration des autres, clament les
+                        Athars, et les Puissances qui le font ne sont
+                        que des êtres de grandes puissance qui protègent
+                        égoïstement leurs propres intérêts en
+                        entretenant un mensonge et cachant la
+                        Vérité. Les membres de cette faction se
+                        sont établis dans le Temple Fracassé,
+                        un symbole du bien fondé de leur
+                        croyance et de la faillibilité des
+                        Puissances, puisqu’il s’agit de
+                        l’ancien temple d’une divinité
+                        des portails, Aoskar, mise à
+                        mal par la <a href="sigil.html#dame" target="_blank">Dame</a> il y a des
+                        éons.</p>
+                <li id="poussiere">Les Hommes-Poussières.</li>
+                
+                        <p>
+                            <img src="images/factions/poussiere.png" class="gallerieleft puce" id="pucefaction" alt="puce poussière" />
+                <img src="lightbox/img/petites/hommepoussiere.jpg" title="agrandir." class="gallerieright factol petite" alt="Hommes Poussière" />
+                Au delà du
+                            Bas Quartier, on trouve la Ruche, le quartier le
+                            plus pauvre de <a href="sigil.html" target="_blank">Sigil</a>, amas de ruelles sinistres et
+                            dangereuses, où l’<a href="#harmonium">Harmonium</a> hésite à s’aventurer.
+                            La misère y est criante et la violence
+                            monnaie courante. C’est dans cet environnement
+                            dépouillé qu’ont choisi de s’installer les
+                            <em>Hommes-Poussières</em>, dont le QG est la Morgue
+                            de Sigil. Ces derniers considèrent en effet que
+                            nous sommes tous morts et qu’il est vain de
+                            s’attacher à ses simulacres de vie. Le multivers
+                            est un lieu sombre, de souffrance et de misère
+                            et pour échapper à cette souffrance et trouver
+                            la paix, il est nécessaire de savoir renoncer aux
+                            illusions, se purger de ses attaches et de ses passions,
+                            afin de trouver la Vraie Mort. Attention,
+                            il ne s’agit pas de se jeter par la première falaise
+                            venue, la mort violente suscite trop d’émotions,
+                            réveille des instincts primaux factices, et nous
+                            éloigne du vrai repos. Pour preuve, la plupart
+                            des lascars qui meurent ainsi reviennent sous
+                            la forme de suppliants, pas plus avancés que
+                            les autres. Sans surprise, on surnomme cette
+                            faction les Morts.</p>
+                    <li id="morne">La Morne Cabale.</li>
+                            <p>
+                                <img src="images/factions/cabale.png" class="gallerieleft puce" id="pucefaction" alt="puce cabale" />
+                        <img src="lightbox/img/petites/mornecabale.jpg" title="agrandir." class="gallerieright factol petite" alt="Morne Cabale" />
+                        La vision de la <em>Morne
+                                Cabale</em>, autre faction de la Ruche, n’est pas bien
+                                plus optimiste, mais elle est plus tournée vers la
+                                compassion. Selon les Mornés, il n’y a aucun sens
+                                au <a href="plans.html" target="_blank">multivers</a>, nous n’avons aucune raison d’être
+                                ici-bas, le multivers est absurde et qui cherche à
+                                découvrir une raison supérieure à ce qui s’y passe
+                                ne fait que se fourvoyer. C’est une vérité difficile
+                                à admettre, et beaucoup deviennent fous, incapable
+                                de supporter l’absence de tout sens à
+                                la vie. Mais ceux qui tiennent tendent à
+                                se tourner vers les autres et aider leurs
+                                semblables à affronter ce monde absurde,
+                                tout en essayant de leur ouvrir
+                                les yeux. Ils s’occupent donc de la
+                                Loge, leur QG, qui sert de soupe
+                                populaire, d’orphelinat et d’asile,
+                                recueillant les miséreux et les perdus.</p>
+                        <li id="xaos">Les Xaositectes.</li>
+                        
+                                <p><img src="images/factions/xaos.png" class="gallerieleft puce" id="pucefaction" alt="puce xaos" />
+                                    <img src="lightbox/img/petites/xaoscitectes.jpg" title="agrandir." class="gallerieright factol petite" alt="Xaositectes" />
+                                    Enfin,
+                                    même s’ils n’ont guère de
+                                    QG fixe, les <em>Xaositectes</em>
+                                    se retrouvent aussi en
+                                    général dans la Ruche,
+                                    où leur comportement erratique leur vaut
+                                    moins de problèmes avec l’<a href="#harmonium">Harmonium</a>. Cette
+                                    faction prône en effet que le Chaos est la
+                                    force primordiale du <a href="plans.html" target="_blank">multivers</a>, que tout a
+                                    des exceptions, qu’il faut savoir incarner le
+                                    chaos pour entrevoir le véritable mouvement
+                                    du Multivers, embrasser l’imprévisible et briser
+                                    toutes les prisons que les Lois essaient
+                                    d’imposer au libre mouvement du chaos. On
+                                    les surnomme aussi les Chaoteux.</p>
+                            <li id="chambre">La Chambre des Orateurs.</li>
+                                    <p>
+                                        <img src="lightbox/img/petites/orateur.jpg" title="agrandir." class="gallerieleft factol petite" alt="orateur" />
+                                        Bordant
+                                        la Ruche, mais séparé par un mur protecteur,
+                                        se trouve le Quartier des Gratte-Papiers, où
+                                        se trouve l’essentiel de l’administration de la
+                                        cité. En tout premier, la <em>Chambre des Orateurs</em>,
+                                        où les représentants des différentes factions
+                                        débattent des lois, décrets et édits de la
+                                        <a href="sigil.html" target="_blank">Cité des Portes</a>. Une instance particulière est
+                                        le Conseil des Factols, où les représentants des
+                                        15 factions officielles peuvent voter tout édit
+                                        ou loi s’appliquant à Sigil. Ils peuvent même
+                                        destituer un de leur pairs, ou changer ses attributions
+                                        (ainsi le rôle législatif de la triade de
+                                        l’ordre lui a été confié par cet organe), mais il
+                                        faut dans ce cas là au moins 10 votes exprimés
+                                        en faveur de ce changement.</p>
+                            <li id="signe">Le Signe de l’Un.</li>
+                            
+                                        <p>
+                                            <img src="images/factions/signe.png" class="gallerieleft puce" id="pucefaction" alt="puce signe" />
+                            <img src="lightbox/img/petites/signedelun.jpg" title="agrandir." class="gallerieright factol petite" alt="Signe de l'Un" />
+                            C’est les membres
+                                            de la faction du <em>Signe de l’Un</em> qui préside ces
+                                            sessions, donnant la parole à chacun et veillant
+                                            au bon déroulement de ses sessions et à l’enregistrement
+                                            de ses minutes. Leur factol a ainsi
+                                            le pouvoir de convoquer un conseil des factols.
+                                            Cette faction estime être au <a href="principe.html#centre" target="_blank">centre</a> du <a href="plans.html" target="_blank">multivers</a>,
+                                            qu’elle ne voit que comme une projection
+                                            de son univers mental. Rien n’existe hors de son
+                                            imagination, et le Multivers émane de celle-ci,ou tout du moins de l’esprit de l’Un, qui est
+                                            sans aucun doute l’un d’entre nous, disent-ils.
+                                            Et pour preuve de leurs dires, ils affirment pouvoir
+                                            influencer le Multivers en se concentrant
+                                            pour mieux maîtriser leur pensée consciente
+                                            ou non. Toujours est-il que comme ils ne perçoivent
+                                            les autres que comme des créations de
+                                            leur esprit, des aspects de leur inconscient, ils
+                                            sont généralement assez ouverts à laisser chacun
+                                            s’exprimer, et font au final de bon présidents
+                                            de sessions, si tant est que l’on supporte
+                                            leur arrogance.</p>
+                                    <li id="marque">Les Marqués.</li>
+                                   
+                                            <p>
+                                                <img src="images/factions/marque.png" class="gallerieleft puce" id="pucefaction" alt="puce marquée" />
+                                                <img src="lightbox/img/petites/marque.jpg" title="agrandir." class="gallerieright factol petite" alt="Marqués" />
+                                                Pas loin de là, on peut
+                                                aussi trouver les Archives, le QG des <em>Marqués</em>,
+                                                où sont récoltées les taxes et conservés
+                                                les actes de propriétés, cadastres, et
+                                                autres documents administratifs d’importance.
+                                                Ce sont eux qui collectent
+                                                les taxes qui sont reversées
+                                                aux différentes administrations,
+                                                se servant
+                                                largement au passage
+                                                et qui enregistrent les
+                                                transactions. Ils estiment
+                                                que le <a href="plans.html" target="_blank">Multivers</a>
+                                                appartient à
+                                                ceux qui savent le
+                                                saisir, et que chacun
+                                                est maître de son propre destin. Seuls les
+                                                faibles et les incapables pleurent sur leurs malheurs.
+                                                Un Marqué sait accepter les écueils et
+                                                rebondir, ne reportant jamais la responsabilité
+                                                de ses échecs ou réussites sur autrui. Ils sont
+                                                connus pour respecter la force, mépriser mendiants
+                                                et fainéants auxquels ils refusent toute
+                                                aide, et refuser tout aussi net toute offrande ou
+                                                acte de pitié envers eux. Ils ne comptent que
+                                                sur eux-mêmes et ne prennent que ce qu’ils estiment
+                                                mériter. Cette attitude dure envers
+                                                les miséreux qui ne font rien pour sortir
+                                                de leur affres leur vaut le surnom de
+                                                Sans-Coeurs ou de Râfleurs.</p>
+                                        <li id="sensate">La Société des Sensations.</li>
+                                      
+                                                <p>  <img src="images/factions/sensate.png" class="gallerieleft puce" id="pucefaction" alt="puce sensate" />
+                                                    <img src="lightbox/img/petites/societedessensations.jpg" title="agrandir." class="gallerieright factol petite" alt="société des sensations" />
+                                                    Mais le
+                                                    quartier de Gratte-Papiers contient aussi un
+                                                    lieu d’art et de loisirs. Loin de la froideur procédurale
+                                                    et administrative de leur voisins, la
+                                                    <em>Société des Sensations</em> gère la Salle des Fêtes
+                                                    de la <a href="sigil.html" target="_blank">Cité</a>. Ils y organisent conférences, expositions,
+                                                    spectacles et autres réjouissances, stimulant
+                                                    aussi l’activité créatrice de Sigil par diverses
+                                                    subventions généreusement offertes aux
+                                                    spectacles originaux. Les membres de cette faction,
+                                                    surnommés les Sensats, estiment en effet
+                                                    que l’on ne peut appréhender le <a href="plans.html" target="_blank">multivers</a>
+                                                    que par ses sens et émotions. C’est en vivant
+                                                    de multiples expériences que l’on saisit la réalité
+                                                    des choses et ce n’est qu’en accumulant autant
+                                                    d’expériences variées que l’on peut espérer
+                                                    trouver la Vérité. L’exploration des sensations
+                                                    du multivers est donc une préoccupation
+                                                    primordiale de cette faction, qui pour faciliter
+                                                    cela a créé des objets magiques capables d’enregistrer
+                                                    de telles sensations et de les conserver,
+                                                    permettant à chacun de revivre l’expérience
+                                                    de celui qui l’a enregistrée. La salle des Fêtes
+                                                    contient un grand nombre de ces sensoriums,
+                                                    la faction payant grassement ceux qui viennent
+                                                    enregistrer des sensations inédites et comptant
+                                                    aussi sur tous ses membres pour toujours élargir
+                                                    sa collection unique.</p>
+                                                <li id="trans">L’Ordre Transcendental.</li>
+                                               
+                                                        <p> <img src="images/factions/transcendant.png" class="gallerieleft puce" id="pucefaction" alt="puce transcendentale" />
+                                                            <img src="lightbox/img/petites/ordretranscendental.jpg" title="agrandir." class="gallerieright factol petite" alt="Ordre Transcendental" />
+                                                            Loin de cette
+                                                            vision plutôt autocratique, l’<em>Ordre Transcendental</em>
+                                                            est à l’écoute du <a href="plans.html" target="_blank">multivers</a> et de la
+                                                            Cadence des Plans. Loin des théories, ils
+                                                            cherchent à ressentir le multivers en eux, trouver
+                                                            l’harmonie intérieure qui les mènera à
+                                                            la sagesse. Pour ce faire, ils prétendent
+                                                            qu’il faut être à l’écoute du Présent
+                                                            et ne pas laisser ses réflexions créer
+                                                            de la distance. Se perdre dans le
+                                                            passé de ses souvenirs, ou se projeter
+                                                            vers l’avenir par des planifications
+                                                            abstraites est un piège qui
+                                                            nous éloigne de notre corps et de
+                                                            l’instant. La meilleure façon d’habiter
+                                                            le présent c’est l’action. La réflexion
+                                                            est stérile, comme les débats interminables.
+                                                            C’est en unifiant le corps et l’esprit,
+                                                            l’action et la pensée, que l’on parvient à
+                                                            l’harmonie, que l’on suit son instinct, ressent
+                                                            la cadence des plans et trouve sa place dans
+                                                            le Multivers. Les Chiffrés, ainsi qu’on les surnomme,
+                                                            gèrent le Grand Gymnase où chacun
+                                                            peut détendre et entraîner son corps.</p>
+                                                <li id="ligue">La Ligue Libre.</li>
+                                                
+                                                <p><img src="images/factions/ligue.png" class="gallerieleft puce" id="pucefaction" alt="puce libre"/>
+                                                    <img src="lightbox/img/petites/liguelibre.jpg" title="agrandir." class="gallerieright factol petite" alt="ligue libre" />
+                                                    Le proche quartier du
+                                                                Marché n’abrite pas de faction officielle, mais la
+                                                                <em>Ligue Libre</em> veille officieusement sur le Grand
+                                                                Marché. Ces derniers, surnommés les Indés, ne
+                                                                se revendiquent pas comme une faction. Ce sont
+                                                                de libres penseurs qui défendent farouchement
+                                                                cette liberté de trouver sa propre voie. Il ne sert à rien de laisser d’autres indiquer la voix,
+                                                                disent-ils, on ne peut trouver sa vérité qu’en la
+                                                                cherchant soi-même. Ils s’opposent ainsi à tous
+                                                                ceux qui essayent d’imposer leur opinion, ou
+                                                                dicter aux gens la manière dont ils devraient
+                                                                penser, ce qui décrit malheureusement la plupart
+                                                                des factions, et leur laisse peu d’alliés.</p>
+                                                    <li id="revo">La Ligue Révolutionnaire.</li>
+                                                    
+                                                                <p><img src="images/factions/anar.png" class="gallerieleft puce" id="pucefaction" alt="puce revolutionnaire" />
+                                                                    <img src="lightbox/img/petites/liguerevolutionnaire.jpg" title="agrandir" class="gallerieright factol petite" alt="ligue revolutionnaire" />
+                                                                    Ils ne
+                                                                    vont cependant pas aussi loin que la <em>Ligue Révolutionnaire</em>,
+                                                                    qu’on surnomme aussi les Anarchistes.
+                                                                    Ces derniers considèrent que le système
+                                                                    entier des factions est corrompu et nous empêche
+                                                                    de trouver tout sens au <a href="plans.html" target="_blank">multivers</a>. Ils
+                                                                    cherchent donc à le renverser, à l’abolir, généralement
+                                                                    par des techniques de sabotages basées
+                                                                    sur de l’infiltration des factions dont ils déterrent
+                                                                    les secrets sales pour les exposer à tous,
+                                                                    ou dont ils étudient les défenses pour planifier
+                                                                    quelque sabotage. Cette Société Secrète, organisée
+                                                                    en cellules indépendantes pour plus de sûreté,
+                                                                    est évidemment complètement illégale et
+                                                                    les <a href="#factionordre">factions de l’ordre</a> en particulier luttent activement
+                                                                    contre ces fléaux qui veulent renverser
+                                                                    les fondements de la société sigilienne.</p>
+<div class="grande"></div>
+                                                                    <nav>
+                                                                        <ul class="boite">
+                                                                        <li class="menu">
+                                                                            <a href="index.html" class="menubouton">
+                                                                            <h2 class="menutitre">Index</h2>
+                                                                        </a>
+                                                                        </li>
+                                                                        <li class="menu">
+                                                                            <a href="#top" class="menubouton">
+                                                                            <h2 class="menutitre">Haut</h2>
+                                                                        </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </nav>
+                                    
+</ul> 
+</div>        
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plans</title>
+    <link rel="icon" href="images/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="Style.css">
+    <link href="js/lightbox.css" rel="stylesheet" />
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+    <script type='text/javascript'>
+               
+                $(document).ready(function(){
+        $('a[href^="#"]').on('click',function (e) {
+            e.preventDefault();
+            var target = this.hash,
+            $target = $(target);
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 900, 'swing', function () {
+                window.location.hash = target;
+            });
+        });
+});
+               
+    </script>
+
+    
+<script>
+    $(function () {
+
+        $(".petite").click(function () {
+            var SourcePetiteImage = $(this).attr('src');
+            var SourceGrandeImage = SourcePetiteImage.replace("petites", "grandes");
+            $(".grande").html("<img src='" + SourceGrandeImage + "'>");
+            $(".grande").fadeIn("slow").css("display", "flex");
+        });
+    
+        $(".grande").click(function () {
+            $(".grande").fadeOut("fast");
+        });
+    
+    });
+    </script>
+
+      
+<script>
+    $(function () {
+
+        $(".petite").click(function () {
+            var SourcePetiteImage = $(this).attr('src');
+            var SourceGrandeImage = SourcePetiteImage.replace("petites", "grandes");
+            $(".grande").html("<img src='" + SourceGrandeImage + "'>");
+            $(".grande").fadeIn("slow").css("display", "flex");
+        });
+    
+        $(".grande").click(function () {
+            $(".grande").fadeOut("fast");
+        });
+    
+    });
+    </script>
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/lightbox-2.6.min.js"></script>
+</head>
+
+<body>
+    <header id="top">
+        <a href="#start">
+            <img src="images/banner.png"alt="bannière" sizes="(max-width: 1020px) 240px, 300px, 780px" srcset="images/banner.png 400w, images/banner.png 600w, images/banner.png 800w" id="banner" />
+        </a>
+        <h1>Les Plans</h1>
+    </header>
+    <div id="square">
+        <nav>
+            <ul class="boite">
+                <li class="menu">
+                    <a href="sigil.html" class="menubouton">
+                        <h2 class="menutitre">Sigil</h2>
+                    </a>
+                </li>
+                <li class="menu">
+                    <a href="plans.html" class="menubouton">
+                        <h2 class="menutitre">Plans</h2>
+                    </a>
+                </li>
+                <li class="menu">
+                    <a href="principes.html" class="menubouton">
+                    <h2 class="menutitre">Principes</h2>
+                </a>
+                </li>
+                <li class="menu">
+                    <a href="races.html" class="menubouton">
+                    <h2 class="menutitre">Races</h2>
+                </a>    
+            </li>
+                    <li class="menu">
+                        <a href="factions.html" class="menubouton">
+                        <h2 class="menutitre">Factions</h2>
+                        </a>    
+                    </li>
+                </ul>
+            </nav>
+    <ul>
+        <h2 id="start">Un peu de cosmogonie des plans</h2>
+<li id="elementaire">Les Plans Élémentaires.</li>
+<p><img src="lightbox/img/petites/plandesplans.jpg" class="petite gallerieleft" alt="plan des plans" title="Agrandir." />Une cosmogonie
+    quelque peu réductrice mais communément
+    admise, au moins pour son caractère
+    illustratif, affirme qu’à l’origine était les éléments,
+    la matière brute des plans. Ces éléments
+    forment encore aujourd’hui les plans
+    élémentaires, ou plans intérieurs. Il y a quatre
+    plans élémentaires purs : les plans du Feu, de
+    la Terre, de l’Eau et de l’Air. A ces quatre-là
+    s’ajoutent le plan élémentaire de l’énergie positive,
+    énergie vitale et rayonnante, et le plan
+    de l’énergie négative, un puît affamé drainant
+    toute autre énergie ; à commencer par la vie.
+    A la rencontre de ces éléments primordiaux
+    se trouvent des plans intermédiaires dit paraélémentaires,
+    quand il s’agit du mélange de
+    deux plans élémentaires voisins (Eau et Terre
+    donnent Vase, Terre et Feu, Magma, Feu et
+    Air, Fumée et enfin Air et Eau donnent Glace),
+    ou bien plans quasi-élementaires, à la rencontre
+    d’un
+    élément
+    et d’une
+    énergie (les énergies
+    positives et négatives se
+    mêlent avec leurs autres éléments pour donner
+    respectivement la Vapeur et le Sel pour l’Eau,
+    les Minéraux et la Poussière pour la Terre, la
+    Radiance et la Cendre pour le Feu, et enfin la
+    Foudre et le Vide pour l’Air).</p>
+<li id="ether">Le Plan Éthéré.</li>
+<p>Combinant cette
+    matière en de multiples formes, le plan éthéré,
+    ou plan des possibles, est un plan transitoire
+    contenant des mondes éphémères issus de
+    songes ou de sorts, des demi-plans en lente gestation,
+    et d’autres merveilles cachées au milieux
+    d’épaisses brumes reliant les plans élémentaires
+    au plan primaire.</p>
+    <li id="planprimaire">Le Plan Matériel Primaire.</li>
+    <p>Le
+        plan matériel primaire est souvent considéré
+        comme le plan de la réalité, le point de départ
+        des croyances, emplies de mondes multiples
+        abritant tout autant de civilisations souvent
+        ignorantes de la réalité des plans, mais
+        dont la Foi abreuve les Puissances divines
+        qui peuplent les plans extérieurs. Quelques
+        exemples connus de ces mondes souvent un
+        peu reculés sont les mondes d’<em>Abeir Toril</em>, de
+        la <em>Taerre</em>, ou de <em>Krynn</em>. Ils sont généralement
+        peuplés d’humains, d’elfes, de nains et autres
+        <a href="races.html#primaires" target="_blank">races de mortels</a>. Nombre de ces mortels prient
+        des Dieux et croient
+        en divers paradis.
+        Leurs croyances
+        sont acheminées
+        à travers le plan
+        Astral vers les plans extérieurs,
+        où d’aucuns prétendent qu’elles prennent
+        forme, ou tout au moins renforcent la puissance
+        de certaines croyances.</p>
+    <li id="astral">Le Plan Astral.</li>
+    <p><img src="lightbox/img/petites/astral.jpg" class="petite gallerieright" alt="astral" title="Agrandir." />Le plan Astral est donc
+        le second plan de transition, reliant les mondes
+        primaires aux plans extérieurs. C’est le plan des
+        idées et de la pensée, hors du temps. Un immense
+        vide argenté parcouru de conduits astraux
+        véhiculant les âmes des morts vers leur nouvelle
+        existence en tant que suppliants du plan
+        ou royaume le plus proche de leur croyance. Ces
+        derniers vivent dans leur plan reflétant le
+        mieux leurs croyances, desquelles ils
+        se rapprochent progressivement
+        jusqu’à se fondre dans celles-ci.
+        C’est aussi dans le plan
+        astral que dérivent les carcasses
+        des <em>dieux oubliés</em>,
+        devenus les refuges improbables
+        des cités de
+        <a href="races.html#githyanki" target="_blank">githyanki</a>, cette race
+        à la fois conquérante et
+        individualiste.</p>
+        <li id="exterieurs">Les Plans Éxtérieurs.</li>
+            <p>De l’autre côté du plan
+            astral, on arrive dans le
+            <a href="principes.html#anneau" target="_blank">Grand Anneau</a> des plans
+            extérieurs, ou plans des
+            croyances. L’aboutissement
+            de toute cette
+            construction. C’est
+            là que les croyances
+            prennent formes pour
+            se livrer bataille. Les
+            17 plans extérieurs
+            s’organisent sur deux axes orthogonaux
+            de
+            moralité, chacun
+            possédant
+            sa propre coloration,
+            son propre
+            alignement.<br /> Ainsi,
+            <em id="superieur">les plans supérieurs</em>, dédiés au Bien, et protégés
+            par toutes sortes de <a href="races.html#celeste" target="_blank">célestiaux</a>, s’opposent
+            aux <em id="inferieur">plans inférieurs</em>, apologie du Mal, et peuplés
+            de <a href="races.html#fielon" target="_blank">fiélons</a> en guerre perpétuelle. Cette
+            <a href="races.html#guerresanglante" target="_blank">Guerre Sanglante</a>, qui déchire les plans inférieurs
+            et déborde fréquemment sur les plans
+            voisins oppose la Loi, représentée dans sa coloration
+            maléfique par les diables des Neuf
+            Enfers (aussi nommé <a href="races.html#baatezu" target="_blank">baatezus</a>), au Chaos,
+            représenté dans les plans inférieurs par les démons
+            des Abysses (aussi nommés <a href="races.html#tanarri" target="_blank">tanar’ri</a>), le
+            tout sous l’oeil intéressé des damnés (ou <a href="races.html#yugoloth" target="_blank">Yugoloths</a>),
+            fiélons neutre mauvais issus de la Gaste
+            Grise.<br /> 
+            Cette division entre la Loi et le Chaos se
+            retrouve aussi dans les plans bons ou neutre. 
+            La Loi est le symbole de la Raison, de la Discipline,
+            de la Méthode, de la Stabilité et de la
+            primauté de la Société sur l’individu, tandis
+            que le Chaos représente à l’inverse l’Imprévu,
+            le Changement, l’Adaptabilité, le Désordre,
+            la Liberté et la primauté de l’Individu sur la
+            société, de l’exception sur la norme.
+            Ainsi les plans extérieurs s’organisent en
+            une <a href="principes.html#cycle" target="_blank">grande roue</a>, selon les axes <a href="principes.html#loyalneutrechaos" target="_blank">Loi/Chaos et
+            Bien/Mal</a>. <br />
+            <img src="lightbox/img/petites/limbo.jpg" class="petite gallerieright" alt="limbo" title="Agrandir." />
+            <img src="lightbox/img/petites/mechanus.jpg" class="petite gallerieleft" alt="mechanus" title="Agrandir." />
+            Partant de la Loi (traditionnellement
+            représentée à gauche) avec le plan de
+            <em id="mechanus">Méchanus</em> (Loyal Neutre), peuplé de <a href="races.html#modron" target="_blank">Modron</a>,
+            on remonte vers le Bien (traditionnellement
+            représenté en haut, donc), en passant par
+            l’<em id="arcadie">Arcadie</em> puis le <em id="montceleste">Mont Céleste</em> (plan Loyal
+            Bon) et ses <a href="races.html#archon" target="_blank">archons</a>, pour atteindre les
+            paradis jumeaux de <em id="bytopie">Bytopie</em> et enfin
+            l’<em id="elysee">Elysée</em> (plan Neutre Bon), avant de
+            continuer vers le Chaos avec la <em id="terredesbetes">Terre
+            des Bêtes</em> et l’<em id="arboree">Arborée</em> (plan Chaotique
+            Bon), peuplée d’<a href="races.html#eladrin" target="_blank">eladrin</a>. On redescend
+            alors, en traversant l’<em id="ysgard">Ysgard</em>,
+            aux <em id="limbes">Limbes</em> (plan Chaotique Neutre), territoire
+            des <a href="races.html#slaad" target="_blank">Slaadi</a> et des <a href="races.html#githzerai" target="_blank">Githzerai</a>, avant de chuter en <em id="pandemonium">Pandemonium</em>
+            puis dans les <em id="abysses">Abysses</em> (Chaotique Mauvais), repaire
+            des cruels démons que sont les <a href="races.html#tanarri" target="_blank">Tanar’ris</a>.
+            De là, on reviens vers la Loi en traversant les
+            <em id="carceres">Carcères</em>, puis la <em id="gaste grise">Gaste Grise</em> (Neutre Mauvais),
+            que même les habitants natifs, les damnés,
+            ou <a href="races.html#yugoloth" target="_blank">Yugoloths</a>, ont fini par abandonner au
+            profit de la <em id="gehenne">Géhenne</em>, qui elle-même mène à
+            <em id="baator">Baator</em> ; aussi appelé les Neuf Enfers, et peuplée
+            des méthodiques et tortueux diables que
+            sont les <a href="races.html#baatezu" target="_blank">baatezus</a>. Il n’y alors qu’à travers les
+            champs de bataille de l’<em id="acheron">Achéron</em> pour revenir
+            sur Méchanus.<br />
+            Au <a href="principes.html#centre" target="_blank">centre</a> de ce Grand Anneau des Plans,
+            se trouve l’<em id="outreterre">Outreterre</em>, le plan de la Neutralité,
+            dont les garants sont les mystérieux <a href="races.html#rilmani" target="_blank">rilmanis</a>,
+            immortels métalliques garants de l’Equilibre.
+            Un écho de ce grand anneau se manifeste en
+            ce plan par une série de <em id="villeporte">Villes-Portes</em>, <a href="principes.html#anneau" target="_blank">anneau</a>
+            de villes et villages proches d’un des autres
+            plans extérieurs, dont ils reflètent l’influence.
+            Chacune de ces villes portes possède un portail
+            permanent vers le plan qu’elle côtoie ainsi.
+            On pourra notamment citer Sylvanus, la ville
+            porte d’Arborée, réputée pour ses fêtes, ou la
+            dangereuse Curst, à proximité des Carcères. Au
+            centre de l’Outreterre se dresse la Spire, un pic
+            montagneux de taille infinie, au dessus duquel
+            on peut apercevoir, flottant, la silhouette torique
+            de <a href="sigil.html" target="_blank">Sigil</a>, véritable carrefour des plans.</p>
+            <div class="grande"></div>
+
+           
+            <nav>
+                <ul class="boite">
+                <li class="menu">
+                    <a href="index.html" class="menubouton">
+                    <h2 class="menutitre">Index</h2>
+                </a>
+                </li>
+                <li id="map">
+                    <a href="images/grande_carte.jpg" target="blank" class="special">
+                            <h2 class="menutitre">carte</h2>
+                    </a>
+
+                </li>
+                <li class="menu">
+                    <a href="#top" class="menubouton">
+                    <h2 class="menutitre">Haut</h2>
+                </a>
+                </li>
+            </ul>
+            </nav>
+            </ul>
+        </div>
+</body>
+</html>

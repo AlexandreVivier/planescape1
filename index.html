@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <title>Planescape</title>
+    <link rel="icon" href="images/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="Style.css">
+    <link href="js/lightbox.css" rel="stylesheet" />
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+    <script type='text/javascript'>
+               
+                $(document).ready(function(){
+        $('a[href^="#"]').on('click',function (e) {
+            e.preventDefault();
+            var target = this.hash,
+            $target = $(target);
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 900, 'swing', function () {
+                window.location.hash = target;
+            });
+        });
+});
+               
+    </script>
+
+
+    
+<script>
+    $(function () {
+
+        $(".petite").click(function () {
+            var SourcePetiteImage = $(this).attr('src');
+            var SourceGrandeImage = SourcePetiteImage.replace("petites", "grandes");
+            $(".grande").html("<img src='" + SourceGrandeImage + "'>");
+            $(".grande").fadeIn("slow").css("display", "flex");
+        });
+    
+        $(".grande").click(function () {
+            $(".grande").fadeOut("fast");
+        });
+    
+    });
+    </script>
+<body>
+    <header>
+        <a href="#intro">
+        <img src="images/banner.png" alt="bannière" sizes="(max-width: 1020px) 240px, 300px, 780px" srcset="images/banner.png 400w, images/banner.png 600w, images/banner.png 800w" id="banner" />
+        </a>
+        <h1>Guide d'introduction</h1>
+    </header>
+    <div id="square">
+    <ul id="intro">
+        <li id="int1">Vos yeux s'ouvrent.</li>
+        <li id="int2">Vos souvenirs sont flous.</li>
+        <li id="int3">On s'approche alors de vous...</li>
+    </ul>
+    <div id="demarrer">
+        <a href=#start id="boutongo">
+            <h2>Bienvenue...</h2>
+        </a>
+    <figure> 
+        <img src="images/mapfond.png" alt="fond" id="mapfond" />
+    </figure>
+</div>
+    <h2 id="start">L'accueil du Chambellan</h2>
+    <p>
+        <img src="lightbox/img/petites/accueil.jpg" alt="accueil" title="agrandir" id="vignette" class="petite gallerieleft" />
+        "Salutations, messires, c’est un honneur pour mon humble personne que de rencontrer d’aussi prestigieux visiteurs. Mon seigneur, Astral, m’a envoyé à vos devants pour vous accueillir en sa demeure. La traversée d’un portail vers un endroit aussi isolé et protégé que celui-ci est quelque peu déboussolante. Je suis navré du désagrément. Il est donc normal que vos souvenirs vous paraissent un peu confus. Cela va vite revenir. Je suis justement là pour vous assister dans ce processus.
+        Dites-moi simplement par où commencer..." 
+    </p>
+    <div class="grande"></div>
+   
+    <nav>
+        <ul class="boite">
+            <li class="menu">
+                <a href="sigil.html" class="menubouton">
+                    <h2 class="menutitre">Sigil</h2>
+                </a>
+            </li>
+            <li class="menu">
+                 <a href="plans.html" class="menubouton">
+                      <h2 class="menutitre">Plans</h2>
+                 </a>
+             </li>
+              <li class="menu">
+                  <a href="principes.html" class="menubouton">
+                     <h2 class="menutitre">Principes</h2>
+                 </a>
+             </li>
+             <li class="menu">
+               <a href="races.html" class="menubouton">
+                 <h2 class="menutitre">Races</h2>
+              </a>    
+             </li>
+              <li class="menu">
+                  <a href="factions.html" class="menubouton">
+                      <h2 class="menutitre">Factions</h2>
+                  </a>    
+               </li>
+        </ul>
+    </nav>
+    </div>
+</body>
+</html>

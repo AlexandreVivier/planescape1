@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigil</title>
+    <link rel="icon" href="images/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="Style.css">
+    <link href="js/lightbox.css" rel="stylesheet" />
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+    <script type='text/javascript'>
+               
+                $(document).ready(function(){
+        $('a[href^="#"]').on('click',function (e) {
+            e.preventDefault();
+            var target = this.hash,
+            $target = $(target);
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 900, 'swing', function () {
+                window.location.hash = target;
+            });
+        });
+});
+               
+    </script>
+
+    
+<script>
+    $(function () {
+
+        $(".petite").click(function () {
+            var SourcePetiteImage = $(this).attr('src');
+            var SourceGrandeImage = SourcePetiteImage.replace("petites", "grandes");
+            $(".grande").html("<img src='" + SourceGrandeImage + "'>");
+            $(".grande").fadeIn("slow").css("display", "flex");
+        });
+    
+        $(".grande").click(function () {
+            $(".grande").fadeOut("fast");
+        });
+    
+    });
+    </script>
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/lightbox-2.6.min.js"></script>
+</head>
+
+<body>
+    <header id="top"> 
+        <a href="#start">
+        <img src="images/banner.png" alt="bannière" sizes="(max-width: 1020px) 240px, 300px, 780px" srcset="images/banner.png 400w, images/banner.png 600w, images/banner.png 800w" id="banner" />
+    </a>
+    <h1>Bienvenue à Sigil</h1>
+    </header>
+    <div id="square">
+        <nav>
+            <ul class="boite">
+                <li class="menu">
+                    <a href="sigil.html" class="menubouton">
+                        <h2 class="menutitre">Sigil</h2>
+                    </a>
+                </li>
+                <li class="menu">
+                    <a href="plans.html" class="menubouton">
+                        <h2 class="menutitre">Plans</h2>
+                    </a>
+                </li>
+                <li class="menu">
+                    <a href="principes.html" class="menubouton">
+                    <h2 class="menutitre">Principes</h2>
+                </a>
+                </li>
+                <li class="menu">
+                    <a href="races.html" class="menubouton">
+                    <h2 class="menutitre">Races</h2>
+                </a>    
+            </li>
+                    <li class="menu">
+                        <a href="factions.html" class="menubouton">
+                        <h2 class="menutitre">Factions</h2>
+                        </a>    
+                    </li>
+                </ul>
+            </nav>
+<ul>
+<h2 id="start">Sigil, le siège de votre pouvoir</h2>
+        <p>
+      
+            <img src="lightbox/img/petites/sigil.jpg" class="petite gallerieleft" alt="sigil" title="Agrandir.">
+        
+        Vous venez de quitter Sigil, la Cité des Portes, aussi appelée la Cage par ses habitants, car il n’est possible d’en sortir (comme
+        d’y rentrer) que par des portails. Ces derniers
+        parsèment la ville, pouvant être portés par
+        n’importe quelle ouverture (arche, porte, fenêtre,
+        trappe), et activés par des clés de toutes
+        formes, matérielles ou non. Toute personne qui
+        traverse l’ouverture en ayant la clé (qui peut
+        aussi bien être un élément physique concret
+        porté sur soi, comme une véritable clé ou un
+        bout de marbre, qu’un état d’esprit donné,
+        un air siffloté ou une couleur de vêtement)
+        est projetée à travers les plans pour se retrouver à la destination du
+        portail. Sachant que l’activation d’un portail
+        par sa clé est automatique (donc potentiellement
+        accidentelle), et que certains de ces passages
+        sont à sens unique, un affranchi prend
+        garde de ne pas se précipiter inconsidérément
+        à travers la moindre ouverture. <br/>
+        La particularité de la Cité des Portes est
+        de posséder des portails vers quasiment tout
+        autre endroit du <a href="plans.html" target="_blank">multivers</a>, et cela en fait un
+        véritable carrefour des plans, lieu de rencontre
+        improbable, cosmopolite et cynique, où l’on
+        peut voir ange et démon venir négocier quelque
+        échange autour d’un verre tandis qu’un efreet
+        discute avec un elfe et un orc à la table voisine. <br/>
+        <img src="lightbox/img/petites/ladyofpain.jpg" class="petite gallerieright" alt="ladyofpain" title="Agrandir.">
+        Un tel lieu excite évidemment les convoitises,
+        des mortels comme des puissances divines,
+        mais sa neutralité est implacablement
+        protégée par la <em id="dame">Dame des Douleurs</em>, une entité
+        gardienne mystérieuse, aux méthodes expéditives,
+        qui s’assure que personne ne soit en position
+        de dominer la ville et ses portails. Elle empêche
+        notamment les Dieux d’y rentrer et les
+        démons d’y apporter <a href="races.html#guerre sanglante" target="_blank">la Guerre Sanglante</a> (la
+        guerre éternelle entre diables et démons). Peu
+        nombreux sont les témoignages de ses apparitions,
+        car elle peut déchiqueter tout passant
+        de son ombre, un châtiment
+        qu’elle ne manque d’infliger
+        à toute personne
+        osant lui vouer un culte,
+chose qu’elle interdit formellement.
+Elle châtie
+cependant plutôt
+ceux qui prétendent à
+prendre un ascendant
+total sur la Cage en les
+envoyant dans les <em>Labyrinthes</em>,
+une prison hors
+de l’espace dont nul n’est
+jamais sorti. </br>
+<img src="lightbox/img/petites/dabus.jpg" class="petite gallerieleft race" title="agrandir" alt="dabus">
+Ses serviteurs
+sont les <em>dabus</em>, des
+humanoïdes flottant au
+dessus du sol qui parlent
+par rébus, que certains
+prétendent les habitants
+originels de Sigil.
+De fait, c’est eux qui
+entretiennent la ville, et
+relaient les messages de la Dame.
+La Dame n’intervient cependant que peu
+dans les affaires quotidiennes de la ville, et le
+pouvoir politique de Sigil est partagé entre <a href="factions.html" target="_blank">les
+15 factions</a> qui siègent à <a href="factions.html#chambre" target="_blank">la Chambre des Orateurs.</a>
+</p>
+<div class="grande">
+</div>
+
+
+<nav>
+    <ul class="boite">
+    <li class="menu">
+        <a href="index.html" class="menubouton">
+        <h2 class="menutitre">Index</h2>
+    </a>
+    </li>
+    <li id="map">
+        <a href="images/sigil.jpg" target="blank" class="special">
+                <h2 class="menutitre">carte</h2>
+    <li class="menu">
+        <a href="#top" class="menubouton">
+        <h2 class="menutitre">Haut</h2>
+    </a>
+    </li>
+</ul>
+</nav>
+</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principes</title>
+    <link rel="icon" href="images/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="Style.css">
+    <link href="js/lightbox.css" rel="stylesheet" />
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+    <script type='text/javascript'>
+               
+                $(document).ready(function(){
+        $('a[href^="#"]').on('click',function (e) {
+            e.preventDefault();
+            var target = this.hash,
+            $target = $(target);
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 900, 'swing', function () {
+                window.location.hash = target;
+            });
+        });
+});
+               
+    </script>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/lightbox-2.6.min.js"></script>
+</head>
+
+<body>
+    <header id="top">
+        <a href="#centre">
+            <img src="images/banner.png"alt="bannière" sizes="(max-width: 1020px) 240px, 300px, 780px" srcset="images/banner.png 400w, images/banner.png 600w, images/banner.png 800w"  id="banner" />
+        </a>
+        <h1>Principes fondamentaux</h1>
+    </header>
+    <div id="square">
+        <nav>
+            <ul class="boite">
+                <li class="menu">
+                    <a href="sigil.html" class="menubouton">
+                        <h2 class="menutitre">Sigil</h2>
+                    </a>
+                </li>
+                <li class="menu">
+                    <a href="plans.html" class="menubouton">
+                        <h2 class="menutitre">Plans</h2>
+                    </a>
+                </li>
+                <li class="menu">
+                    <a href="principes.html" class="menubouton">
+                    <h2 class="menutitre">Principes</h2>
+                </a>
+                </li>
+                <li class="menu">
+                    <a href="races.html" class="menubouton">
+                    <h2 class="menutitre">Races</h2>
+                </a>    
+            </li>
+                    <li class="menu">
+                        <a href="factions.html" class="menubouton">
+                        <h2 class="menutitre">Factions</h2>
+                        </a>    
+                    </li>
+                </ul>
+            </nav>
+            <ul>
+        <h2 id="start">Les trois principes</h2>
+                <li id="centre">Le Centre de Tout.</li>
+                    <p>N’allez pas pour
+                    autant croire que la Cage est réellement le
+                    <em>centre</em> de tout. Ce l’est pour les sigiliens, certes,
+                    mais l’un des grands principes du <a href="plans.html" target="_blank">multivers</a> est
+                    justement que tout endroit peut être considéré
+                    comme le Centre de Tout, les plans étant infinis.
+                    Les choses sont donc relatives, et si <a href="sigil.html" target="_blank">Sigil</a>
+                    est bien le Centre de Tout pour nombres de <a href="factions.html" target="_blank">factionnaires</a>, combien de <a href="races.html#primaires" target="_blank">primaires</a> ne pensent-ils
+                pas que leur propre monde est le centre de tout.
+                La vérité, c’est que la grande mécanique des
+                plans implique qu’aucun endroit n’est plus important
+                qu’un autre. Quelque soit l’influence
+                d’un plan ou d’un endroit, l’existence continuera
+                s’il venait à disparaître.</p>
+                <li id="cycle">L’Unité des Anneaux.</li>
+                        <p>Le deuxième
+                            principe est l’Unité des <em id="anneau">Anneaux</em>. La structure
+                            des plans tend à être cyclique. C’est un symbole
+                            récurrent qui peut s’appliquer de manière
+                            propre ou figurée à l’ensemble de la structure
+                            des plans. Les <a href="plans.html#elementaire" target="_blank">plans élémentaires</a>, ainsi, sont
+                            organisés en trois anneaux (Terre-Eau-Air-Feu,
+                            Energie positive - Feu - Energie négative - Eau, et
+                            Terre - Energie positive - Air - Energie négative),
+                            la plupart des <a href="plans.html#planprimaire" target="_blank">mondes primaires</a> forment un anneau
+                            autour d’un astre (ou l’inverse), le Grand
+                            Anneau des <a href="plans.html#exterieurs" target="_blank">plans extérieurs</a>, des <a href="plans.html#villeporte" target="_blank">Villes-Portes</a>,
+                            la forme de <a href="sigil.html" target="_blank">Sigil</a>... A la manière d’un anneau,
+                            les choses n’ont ni début ni fin, elles s’enchaînent,
+                            rattachées l’une à l’autre de façon
+                            continue jusqu’à revenir à leur point de départ.
+                            Tout est cyclique.</p>
+                <li id="trois">La Règle de Trois.</li>
+                            <p>Et de même que
+                                l’affranchi sait être attentif aux cycles, il sait
+                                que les choses vont toujours par <em>trois</em>. Qui voit
+                                deux éléments ferait bien de chercher le troisième,
+                                et suivant sa propre règle, le troisième
+                                principe est celui de la Règle de Trois. Tout
+                                va par trois dans le multivers : <em id="loyalneutrechaos">Loi-Neutralité-Chaos</em>, <em id="bonneutremal">Bien-Neutralité-Mal</em>, <em id="interieurexterieur">plans Intérieurs-plan Primaire-plans Extérieurs</em>, et les grands
+                                principes eux-même sont au nombre de trois.</p>
+
+                                <nav>
+                                    <ul class="boite">
+                                    <li class="menu">
+                                        <a href="index.html" class="menubouton">
+                                        <h2 class="menutitre">Index</h2>
+                                    </a>
+                                    </li>
+                                    <li class="menu">
+                                        <a href="#top" class="menubouton">
+                                        <h2 class="menutitre">Haut</h2>
+                                    </a>
+                                    </li>
+                                </ul>
+                                </nav>
+                            </ul>
+    </div>
+</body>
+</html>

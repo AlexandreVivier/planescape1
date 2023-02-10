@@ -1,0 +1,387 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Races</title>
+    <link rel="icon" href="images/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="Style.css">
+    <link href="js/lightbox.css" rel="stylesheet" />
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+    <script type='text/javascript'>
+               
+                $(document).ready(function(){
+        $('a[href^="#"]').on('click',function (e) {
+            e.preventDefault();
+            var target = this.hash,
+            $target = $(target);
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 900, 'swing', function () {
+                window.location.hash = target;
+            });
+        });
+});
+            
+            
+    </script>
+
+<script>
+    $(function () {
+
+        $(".petite").click(function () {
+            var SourcePetiteImage = $(this).attr('src');
+            var SourceGrandeImage = SourcePetiteImage.replace("petites", "grandes");
+            $(".grande").html("<img src='" + SourceGrandeImage + "'>");
+            $(".grande").fadeIn("slow").css("display", "flex");
+        });
+    
+        $(".grande").click(function () {
+            $(".grande").fadeOut("fast");
+        });
+    
+    });
+    </script>
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/lightbox-2.6.min.js"></script>
+</head>
+
+<body>
+    <header id="top">
+        <a href="#start">
+        <img src="images/banner.png" alt="bannière" sizes="(max-width: 1020px) 240px, 300px, 780px" srcset="images/banner.png 400w, images/banner.png 600w, images/banner.png 800w"  id="banner" />
+    </a>
+    <h1>Habitants des plans</h1>
+    </header>
+    <div id="square">
+        <nav>
+            <ul class="boite">
+                <li class="menu">
+                    <a href="sigil.html" class="menubouton">
+                        <h2 class="menutitre">Sigil</h2>
+                    </a>
+                </li>
+                <li class="menu">
+                    <a href="plans.html" class="menubouton">
+                        <h2 class="menutitre">Plans</h2>
+                    </a>
+                </li>
+                <li class="menu">
+                    <a href="principes.html" class="menubouton">
+                    <h2 class="menutitre">Principes</h2>
+                </a>
+                </li>
+                <li class="menu">
+                    <a href="races.html" class="menubouton">
+                    <h2 class="menutitre">Races</h2>
+                </a>    
+            </li>
+                    <li class="menu">
+                        <a href="factions.html" class="menubouton">
+                        <h2 class="menutitre">Factions</h2>
+                        </a>    
+                    </li>
+                </ul>
+            </nav>
+    <ul>
+<h2 id="start">Les races planaires</h2>
+<p>La <a href="principes.html#trois" target="_blank">règle de trois</a> s’applique particulièrement
+    aux habitants des <a href="plans.html#exterieurs" target="_blank">plans extérieurs</a>, de
+    par la double triade Bien Neutralité Mal et
+    Loi Neutralité Chaos, qui organise la plupart
+    des êtres natifs des plans extérieurs. S’il existe
+    des nuances le long de ces deux axes, les neuf
+    plans les plus tranchés ont chacun donné naissance
+    à une race d’immortels planaires.</p>
+<li id="guerresanglante">La Guerre Sanglante.</li>
+    <p>On désigne
+    par le terme de fiélons les planaires natifs des
+    <a href="plans.html#inferieur" target="_blank">plans inférieurs</a>. Ces êtres se livrent une guerre
+    sans relâche qui dure depuis la nuit des temps,
+    la Guerre Sanglante, opposant la Loi au Chaos,
+    les Diables aux Démons, pour le contrôle des
+    plans inférieurs, sous l’oeil attentif des neutres
+    Damnés.</p>
+<li id="baatezu">Baatezus.</li>
+
+    <p>
+        <img src="lightbox/img/petites/baatezu.jpg" class="petite gallerieleft race" alt="Baatezu" title="agrandir">
+        <img src="lightbox/img/petites/cornugon.jpg" class="petite gallerieright race" alt="cornugon" title="agrandir">
+        Les diables, ou <em>baatezus</em>,
+        Loyaux Mauvais, originaires des <a href="plans.html#baator" target="_blank">Neuf enfers
+        de Baator</a>, sont des fiélons tyranniques et retors.
+        Ils ont pour habitude de tirer partie des
+        lois, en détournant l’esprit pour s’appuyer sur
+        la lettre. Hiérarchisés, planificateurs et méthodiques,
+        ils piègent les mortels dans des
+        contrats iniques leur coûtant leur âme pour
+        de maigres avantages.
+        Si l’on excepte
+        les Seigneurs des Enfers qui règnent
+        sur chacune des strates de Baator,
+        tels que Bel, Asmodée, ou Belzebuth,
+        les plus puissants d’entre
+        eux sont les <em>diantrefosses</em>,
+        généraux de leurs
+        armées de terreur.</p>
+<li id="tanarri">Tanar’ri.</li>
+        <p>
+            <img src="lightbox/img/petites/succube.jpg" class="petite gallerieleft race" title="agrandir" alt="succube">
+            <img src="lightbox/img/petites/marilith.jpg" class="petite gallerieright race" title="agrandir" alt="marilith">
+            Face à eux, les Démons, ou
+            <em>tanar’ri</em>, issus des <a href="plans.html#abysses" target="_blank">Abysses</a>, Chaotiques Mauvais,
+            sont une incarnation de la violence, de
+            l’instinct meurtrier et de la perversité. Suivant
+            leurs moindre désirs, ils infligent moultes souffrances,
+            torturant leurs adversaires physiquement
+            comme psychologiquement. Ils sont de
+            formes plus variées que leurs adversaires, et
+            comptent un certain nombre de Prince-Démons
+            de grande puissance en leur sein, telle que
+            Grazz’t, Demogorgon ou Juiblex. 
+            Leur plus
+            puissants généraux sont les puissants <em>balors</em> et
+            les rusées <em>mariliths</em>. Ils tentent les mortels par
+            leurs désirs de luxure ou de pouvoir, utilisant
+            pour cela succubes et incubes, mais aussi les
+            <em>glabrezu</em>, qui offrent leurs secrets aux plus puissants
+            mages.</p>
+<li id="yugoloth">Yugoloths.</li>
+            <p>Entre ces deux camps, servant
+                de mercenaires pour l’un ou l’autre,
+                on trouve les Damnés, ou <em>Yugoloths</em>, fiélons
+                Neutres Mauvais. Leur plus bas rangs sont
+                des machines à tuer pouvant changer le cours
+                d’un bataille, mais leur vraie puissance provient
+                de ceux d’entre eux qui tiennent les
+                comptes.
+                <img src="lightbox/img/petites/arcanaloth.jpg" class="petite gallerieleft race" title="agrandir" alt="arcanaloth">
+                 Les <em>arcanoloths</em>, fiélons à tête de chacal
+                qui proposent les services de mercenaires
+                aux deux camps, sont en particulier suspectés
+                d’être des maîtres-manipulateurs hors-pairs, tirant
+                en réalité toutes les ficelles de la Guerre
+                Sanglante. Et encore, leur intelligence est censée
+                pâlir en comparaison de celle des <em>ultroloths</em>
+                qui dirige l’ensemble des yugoloths.</p>
+<li id="fielon">Autres Fiélons.</li>
+        <p>
+            <img src="lightbox/img/petites/gehreleth.jpg" class="petite gallerieleft race" title="agrandir" alt="gehreleth">
+            <img src="lightbox/img/petites/bebilith.jpg" class="petite gallerieright race" title="agrandir" alt="bebilith">Il existe bien
+            d’autres fiélons, tels que les <em>Gehreleth</em>,
+            être difformes natifs des <a href="plans.html#carceres" target="_blank">Carcères</a>, vouant
+            une haine implacable aux
+            Yugoloths, les <em>Démombres</em>,
+            ombres
+            spectrales se
+            nourrissant
+            d’âmes, les <em>Guénaudes</em>, sorcières commerçant
+            leur art, poisons et
+            denrées à travers les <a href="plans.html#inferieur" target="_blank">plans inférieurs</a>,
+            ou encore les <em>Bebiliths</em>, monstrueuses araignées
+            abyssales, seul prédateur connu des
+            tanar’ris. Une liste exhaustive parait superflue,
+            mais n’hésitez pas à me demander
+            si vous avez besoin de quelques renseignements.</p>
+<li  id="celeste">Les Célestes.</li>
+        <p><img src="lightbox/img/petites/devamovan.jpg" class="petite gallerieright race" title="agrandir" alt="deva">Fort heureusement, les
+            fiélons ne sont pas les seuls planaires. De même
+            qu’il y a des incarnations du Mal, il y en a aussi
+            du Bien, de la Loi, du Chaos ou de l’Equilibre.
+            Les célestes sont le pendant Bon des fiélons.
+            Ces êtres issus des <a href="plans.html#superieur" target="_blank">plans supérieurs</a> ont aussi
+            des avis partagés sur la Loi et le Chaos, mais
+            leur désaccord s’expriment moins violemment.
+            Parangons de vertu, les <em id="archon">Archons</em> sont natifs des
+            Sept Ciels du <a href="plans.html#montceleste" target="_blank">Mont Céleste</a>, le plan Loyal Bon.
+            D’apparences diverses selon leur place dans
+            la hiérarchie, des compatissants archons lanternes,
+            vivaces boules de lumière douce, aux
+            majestueux archons trônes, dont l’altière silhouette
+            se nimbe d’une puissante aura, ils ont
+            tous pour vocation de guider les mortels et suppliants
+            vers la Vertu. </br>
+            <img src="lightbox/img/petites/guardinal.jpg" class="petite gallerieleft race" title="agrandir" alt="Gardinal">
+            <img src="lightbox/img/petites/eladrin.jpg" class="petite gallerieright race" title="agrandir" alt="Eladrin">
+            Les <em>gardinaux</em>, issus de
+            l’<a href="plans.html#elysee" target="_blank">Elysée</a>, sont de farouches défenseurs du Bien,
+            opposants de toute forme de Mal, protecteurs
+            dont les formes animales indiquent la spécialité,
+            des érudits ursinaux, au visage d’ours, aux vifs
+            et discrets avoraux, aux traits aquilins. Plus
+            penchés vers le chaos, les <em id="eladrin">eladrins</em> aux traits
+            féériques s’imprègnent des passions d’<a href="plans.html#arboree" target="_blank">Arborée</a>,
+            protégeant la liberté, l’art et l’expression individuelle
+            à travers les plans. A ces planaires natifs
+            des plans supérieurs s’ajoute les <em>aasimons</em>,
+            souvent appelés anges, qui arborent bien souvent
+            de puissantes ailes au dos de corps humanoïdes
+            de proportions parfaites. Ces derniers
+            sont les serviteurs des puissances du Bien, accomplissant
+            la volonté de leur divinité dans les
+            plans qu’ils parcourent.</p>
+    <li id="immortels">Autres immortels
+                planaires.</li>
+                <p>        
+                <img src="lightbox/img/petites/modron.jpg" class="petite gallerieleft race" title="agrandir" alt="modron">
+                Enfin,
+                    cet aperçu des
+                    races planaires
+                    majeures ne serait
+                    être complet sans
+                    mentionner les races
+                    planaires médianes,
+                    qui ne penchent ni
+                    vers le Bien, ni vers
+                    le Mal. Du côté de
+                    la Loi, on trouve les
+                    <em id="modron">modrons</em> de <a href="plans.html#mechanus" target="_blank">Mechanus</a>,
+                    êtres de Loi
+                    pure à l’aspect
+                    mécanique, dont les
+                    rouages et les chairs forment un assemblage
+                    rigoureux et immuable indiquant clairement
+                    leur position dans la stricte hiérarchie qui les
+                    régit.  </br>               
+                    <img src="lightbox/img/petites/slaad.jpg" class="petite gallerieright race" title="agrandir" alt="slaad">
+                    Du chaos des <a href="plans.html#limbes" target="_blank">Limbes</a> sont nés les <em id="slaad">Slaadi</em>,
+                    créatures violentes, indisciplinées et profondément
+                    individualistes, dont l’aspect général
+                    batracien varie en couleur et en taille d’un
+                    individu à l’autre. En <a href="plans.html#outreterre" target="_blank">Outreterre</a>, au centre de tout cela,
+                    maintenant l’Equilibre des plans en préservant
+                    la Neutralité, se trouvent les <em id="rilmani">Rilmanis</em>,
+                    immortels gardiens de la Neutralité Stricte,
+                    revêtant l’apparence d’humanoïdes à la peau
+                    métallique.</p>
+        <li id="planaires">Les Humains et leur Descendants
+                        Aplanis.</li>
+                        <p>  <img src="lightbox/img/petites/humaine2.jpg" class="petite gallerieright race" title="agrandir" alt="mage">
+                            <img src="lightbox/img/petites/planaire.jpg" class="petite gallerieleft race" title="agrandir" alt="guerrier">
+                            Mais depuis les origines, la population
+                            des plans s’est diversifiée, et l’on ne trouve
+                            pas que des immortels planaires ou des suppliants
+                            dans ces derniers. De nombreux <em>humains</em>
+                            se sont répandus dans les <a href="plans.html#exterieurs" target="_blank">plans extérieurs</a>,
+                            devenant eux-mêmes, au fil des générations,
+                            des êtres planaires de plein droit. Les
+                            croisements ne sont pas non plus rares, et l’influence
+                            d’un immortel planaire dans une lignée
+                            est persistante, et l’on trouve ainsi de nombreux
+                            <em>aplanis</em>, le nom que l’on donne aux descendants
+                            mortels d’un habitant des plans non
+                            primaires. </br>
+                            <img src="lightbox/img/petites/aasimar.jpg" class="petite gallerieleft race" title="agrandir" alt="aasimar">
+                            <img src="lightbox/img/petites/tieflin.jpg" class="petite gallerieright race" title="agrandir" alt="tieffelin">
+                            Ainsi les <em id="tieffelin">tieffelins</em>, descendants de
+                            fiélons, gardent de leur ancêtres des traits souvent
+                            flagrants, et suscitent une méfiance dont
+                            il faut bien avouer qu’elle est souvent justifiée.
+                            A l’inverse, leurs cousins célestes, les <em id="aasimar">aasimars</em>,
+                            dotés de caractéristiques angéliques leur
+                            conférant une aura de vertu, sont les bienvenus
+                            partout à l’exception des <a href="plans.html#inferieur" target="_blank">plans inférieurs</a>.</br>
+                            <img src="lightbox/img/petites/genasi.jpg" class="petite race gallerieleft" title="agrandir" alt="genasi">
+                            On trouve aussi parfois quelques raretés, comme les
+                            descendants de races élémentaires primales des
+                            <a href="plans.html#elementaire" target="_blank">plans intérieurs</a>, qui gardent une affinité forte
+                            avec leur élément (ou quasi-élément), qu’on appelle
+                            <em id="genasi">genasi</em>. Affilés à l'eau, l'air, le feu où la terre, ces derniers peuvent également être issus de l'union d'humains avec des génies élémentaires du <a href="plans.html#planprimaire" target="_blank">plan primaire</a>, mais les versions planaires de ces êtres sont toutefois légitimement plus répandues en nos contrées. De très rares spécimen de Genasi combinant deux éléments (comme la vapeur, la glace, le magma ou la fumée pour ne citer qu'eux.) peuvent être croisés. On les nomme alors Para-Genasi. 
+                            
+                    </p>
+<li id="gith">Illithid, Githzerai, Githyanki et autres Mortels Planaires.</li>
+        <p><img src="lightbox/img/petites/illithid.jpg" class="petite gallerieright race" title="agrandir" alt="Illithid">Les humains ne sont
+            pas les seuls à s’être répandus dans les plans,
+            cependant. Et on notera en particulier la migration
+            célèbre d’un peuple oublié, anciens
+            esclaves des Illithids, où <em id="flagelleur">flagelleurs mentaux</em>, dont la rébellion
+            a disloqué le puissant empire de ces êtres
+            tentaculaires.</br> Un différent sur la conduite à
+            tenir après avoir vaincu leurs anciens maîtres
+            a divisé cette race d’humanoïde à la peau
+            jaune pâle en deux blocs : 
+            <img src="lightbox/img/petites/githyanki.jpg" class="petite gallerieleft race" title="agrandir" alt="githyanki">
+             Les premiers, les <em id="githyanki">Githyanki</em>,
+            fidèles à leur intransigeante libératrice Gith, sont devenus
+            un peuple militaire et farouche, désireux
+            de prendre la place de leur anciens maîtres, et
+            prompte à conquérir, dominer ou oppresser
+            ceux qu’ils avaient libérés. Il se sont installés
+            dans le <a href="plans.html#astral" target="_blank">plan astral</a>. </br>
+            <img src="lightbox/img/petites/githzerai.jpg" class="petite gallerieright race" title="agrandir" alt="githzerai">
+            Leurs opposants à
+            l’esprit rebelle et libertaire toujours aussi vivace, représentés par Zerthimon, se sont
+            installés dans l’environnement hostile des
+            <a href="plans.html#limbes" target="_blank">Limbes</a>. Ce sont les austères <em id="githzerai">Githzerai</em>, qui depuis leur relative réclusion, continuent toujours
+            de s’opposer à toute forme d’esclavage.</br>
+            <img src="lightbox/img/petites/bariaure.jpg" class="petite gallerieleft race" title="agrandir" alt="bariaur">
+            On pourrait aussi mentionner les <em id="bariaur">Bariaurs</em>,
+            peuple quadrupède demi-homme mi-bouc, dont les tribus parcourent
+            les plaines d’<a href="plans.html#outreterre" target="_blank">Outreterre</a> et d’<a href="plans.html#ysgard" target="_blank">Ysgard</a>, ou bien les
+            <em>Khaasta</em>, lézards humanoïdes aux traitresses
+            phéromones, qui commercent volontiers avec
+            les <a href="plans.html#inferieur" target="_blank">plans inférieurs</a>.</p>
+
+<li id="primaires">Les Primaires.</li>
+
+    <p>
+        <img src="lightbox/img/petites/humain.jpg" class="petite gallerieright race" title="agrandir" alt="humain">
+        <img src="lightbox/img/petites/humaine.jpg" class="petite gallerieleft race" title="agrandir" alt="humaine">
+        Enfin, pour finir notre
+        panorama, il est bon de rappeler que les nombreuses
+        races originaires du <a href="plans.html#planprimaire" target="_blank">plan matériel primaire</a>
+        ne restent pas toujours sur leur petit
+        bout de plan. On trouve aussi dans <a href="sigil.html" target="_blank">Sigil</a>
+        nombre de Paumés, ignorant de la plupart
+        des coutumes planaires, arrivés volontairement
+        ou non au gré de quelque portail. Si les <em>humains</em>
+        changent de nature en quelques générations,
+        ce n’est pas le cas des <em>elfes</em> ou des <em>nains</em>,
+        par exemple. </br>
+        <img src="lightbox/img/petites/elfe.jpg" class="petite gallerieright race" title="agrandir" alt="elfe">
+        <img src="lightbox/img/petites/elfe2.jpg" class="petite gallerieleft race" title="agrandir" alt="elfe">
+        Les débrouillards et aventureux
+        <em>halfelins</em> se retrouvent facilement happés par
+        quelques portails et il y en a un certain nombre
+        à Sigil, ainsi que de leur cousins de Krynn,
+        les <em>kender</em>, dont l’apparence enfantine cache
+        une habilité redoutable et une absence totale
+        de peur qui, couplée à une curiosité maladive,
+        aboutit souvent à une mort précoce.
+        Mais je disgresse. Ce long exposé de la
+        population des plans n’est sans doute pas
+        ce qu’il est le plus important de vous remémorer.
+        Veuillez excusez les radotages d’un
+        passionné. Enfin, j’espère
+        que ce long détour
+        vous aura
+        au moins
+        permis
+        de reprendre
+        vos esprits.</p>
+        <div class="grande">
+        </div>
+
+        <nav>
+            <ul class="boite">
+            <li class="menu">
+                <a href="index.html" class="menubouton">
+                <h2 class="menutitre">Index</h2>
+            </a>
+            </li>
+            <li class="menu">
+                <a href="#top" class="menubouton">
+                <h2 class="menutitre">Haut</h2>
+            </a>
+            </li>
+        </ul>
+        </nav>
+    </ul>
+    </div>
+</body>
+</html>

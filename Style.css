@@ -1,0 +1,444 @@
+body {
+    margin: 0;
+    background-color: #0E1411;
+    color: cornsilk;
+  }
+
+
+header {
+    display: flex, block;
+    background-repeat: repeat-x;
+background-image: url(images/shade.png);
+background-color: #1C170A;
+background-position: bottom;
+    padding-top: 20px;
+padding-bottom: 25px;
+    text-align: center;
+    color:  #75a3a3;
+    border-bottom-style: groove ;
+    border-color: cornsilk;
+    background-size: cover;
+    max-width: 100%;
+    width: 100%;
+    box-shadow: 0px 5px 15px rgba(187, 127, 71, 0.329) inset;}
+
+    header:hover {
+      box-shadow: 0px 5px 15px rgba(218, 172, 129, 0.568) inset;
+      background-color:  rgb(61, 47, 36);
+      background-image: url(images/lady.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      padding-bottom: 70px;
+      padding-top: 50px;
+      transition: 1s;
+    }
+
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    width: 80%;
+    margin: 50px auto;
+    text-align: justify;
+    padding: 7px;
+  
+
+}
+ p:hover {
+background-color: rgb(33, 44, 39);
+color: white;
+text-shadow: 3px 3px 5px black;
+box-shadow: 0px 0px 7px rgb(33, 44, 39);
+
+font-size: 1.2em;
+line-height: 1.6em;
+font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    transition: 0.5s;
+    border-radius: 15px;
+ 
+ }
+
+em {
+  font-weight: bold;
+  font-style: normal;
+  color: white;
+}
+
+h1, h2, h3, li {
+
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-style: italic;
+    padding-left: 7%;
+    font-weight: bold;
+}
+
+
+h3 {
+    font-size: 1em;
+    margin: 12px;
+    padding-top: 80px;
+    font-style: italic;
+}
+
+header, h1 {
+  text-transform: uppercase;
+}
+
+li {
+  font-style: italic;
+  display: flex;
+  width: 80%;
+  margin: 50px auto;
+  margin-top: 80px;
+  clear: both;
+
+
+}
+
+h2, h3 {
+
+        display: flex;
+        width: 80%;
+        margin: 50px auto
+  }
+
+  a {
+      color: #75a3a3;
+      text-decoration: none;
+  }
+  h1 {
+    text-shadow: 0 0 0.1em beige, 1px 1px white, -1px 0 white, 0 -1px white;
+  }
+
+  br {
+    margin-bottom: 2.5em;
+  }
+  .menu:hover {
+    background-color: saddlebrown;
+    text-shadow: 0 0 0.1em beige, 1px 1px white, -1px 0 white, 0 -1px white;
+    transition: 0.7s all;
+  }
+
+  .gallerieleft {
+    width: 180px;
+    float : left;
+    margin : 1em;
+    box-shadow: 6px 6px 15px rgba(8, 9, 17, 0.829);
+ 
+  }
+  .gallerieright {
+    width: 180px;
+    float : right;
+    margin : 1em;
+    box-shadow: 6px 6px 15px rgba(8, 9, 17, 0.829);
+
+      }
+  #vignette {
+    height: 150px;
+    width: 137px;
+    margin-top: 0;
+    padding-top: 0;
+    
+  }
+.race {
+  width: 100px;
+}
+
+
+#intro {
+
+  margin-bottom: 5em;
+  padding-top: 2.5em;
+}
+
+#int1
+ {
+  text-shadow: 100px 40px 12px rgba(255, 248, 220, 0.500);
+}
+
+#int2 {
+  text-shadow: 57px 30px 6px rgba(255, 248, 220, 0.500);
+}
+
+#int3 {
+  text-shadow: 16px 20px 3px rgba(255, 248, 220, 0.400);
+}
+
+#int1:hover
+ {
+   padding-left: 5%;
+  opacity: 0.3;
+  transition: 0.6s;
+}
+
+#int2:hover {
+  padding-left: 5%;
+  opacity: 0.6;
+  transition: 0.6s;
+}
+
+#int3:hover {
+  padding-left: 5%;
+  opacity: 0.8;
+  transition: 0.6s;
+}
+
+#demarrer {
+
+  
+  width: 99%;
+  height: 700px;
+ text-align: center;
+ margin-top: 80px;
+ margin-bottom: 100px;
+
+}
+
+#boutongo {
+  background-color: rgb(38, 54, 46);
+  width: 20%;
+  color: cornsilk;
+  border: 2px, cornsilk;
+  border-bottom-left-radius : 20%;
+  border-bottom-right-radius: 20%;
+  box-shadow: 6px 6px 15px rgb(8, 9, 17);
+  box-shadow: 0px 5px 15px rgb(83, 107, 95) inset;
+  border-style: groove;
+  text-align: center;
+  border-style: groove;
+    text-shadow: 0 0 0.1em rgb(92, 236, 255);
+  display: block;
+  margin-left: 40%;
+  margin-top: 20px;
+}
+
+#boutongo:hover {
+
+  background-color: #0E1411;
+  color: rgb(206, 233, 236);
+
+  box-shadow: 0px 0px 30px rgba(194, 193, 181, 0.377);
+
+  text-shadow: 0 0 0.1em rgb(255, 255, 255);
+  background-image: url(images/square.png);
+    background-repeat: repeat-x;
+    background-position-y: 0px;
+  transition: 0.5s;
+}
+
+#mapfond {
+  width: 600px;
+  opacity: 0.7;
+}
+
+#mapfond:hover {
+  width: 625px;
+opacity: 0.9;
+transition: 0.3s;
+}
+
+  .menubouton {
+    text-align: center;
+  display: block;
+    width: 150px;
+    box-shadow: 6px 6px 15px rgba(8, 9, 17, 0.455);
+  }
+
+  .boite {
+  
+    justify-content: space-between;
+    padding-left: 0;
+    display: flex;
+    width: 80%;
+    max-width: 100%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    margin-right: 10%;
+  }
+
+  .menu {
+    justify-content: space-between;
+    list-style: none;
+    width: 150px;
+    height : 100px;
+    background-color: #1C170A;
+    border-style: groove;
+    text-shadow: 0 0 0.1em beige;
+    font-weight: lighter;
+    font-size: 1em;
+    margin: 0 auto;
+    display: flex;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    background-image: url("images/boutonmenu.png");
+    box-shadow: 2px 2px 7px rgb(187, 127, 71) inset;
+  }
+  .menutitre {
+    text-align: center;
+    display: block;
+    padding: 0pc;
+    width: 150px;
+  }
+  #square {
+
+    background-image: url(images/square.png);
+    background-repeat: repeat-x;
+    background-position-y: 0px;
+    width: 100%;}
+
+
+
+    .puce {
+      width: 90px;
+      border: 2px solid;
+      color: cornsilk;
+      border-radius: 50%;
+      box-shadow: 5px 5px 10px black;
+    }
+    .puce:hover {
+      width: 95px;
+      transition: 0.3s;
+
+    }
+
+    .factol {
+
+      width: 150px;
+    }
+  #map {
+      border-style: groove;
+      justify-content: space-between;
+    list-style: none;
+    width: 150px;
+    height : 100px;
+    background-color: #1C170A;
+    box-shadow: 6px 6px 15px rgba(8, 9, 17, 0.600);
+    text-shadow: 0 0 0.1em beige;
+    font-weight: lighter;
+    font-size: 1em;
+    margin: 0 auto;
+    display: flex;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    background-image: url(images/miniaturecartesprite.jpg);
+    background-position: 0;
+    text-shadow: 0 0 0.1em beige, 1px 1px white, -1px 0 white, 0 -1px white;
+  }
+
+#map:hover {
+  background-image: url(images/miniaturecartesprite.jpg);
+  background-position: 151px;
+  color: saddlebrown;
+
+}
+.special {
+  color: #1C170A;
+        text-decoration: none;
+  }
+
+  .petite, .grande {
+    cursor: pointer;
+    border: 2px, cornsilk, groove;
+    border-style: groove;
+    border-radius: 5px;
+
+}
+
+.grande {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(6, 8, 20, 0.61);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.grande img {
+
+    height: 90%;
+    border: 4px, cornsilk, solid;
+    border-radius: 5px;
+}
+
+@media (max-width: 1024px) {
+  html { font-size: 0.9em!important; }
+  .menu { width: 150px;
+    height: 100px;}
+  #map { width: 150px;
+      height: 100px;}
+}
+
+@media (max-width: 800px) {
+  html { font-size: 0.8em!important; }
+  header:hover {
+    box-shadow: 0px 5px 15px rgba(218, 172, 129, 0.568) inset;
+    background-color:  rgb(61, 47, 36);
+    transition: 0.4s;
+    background-image: url(images/shade.png);
+    padding-top: 17px;
+              padding-bottom: 20px;
+  }
+  .grande img {height: 70%;}
+  .gallerieleft { width: 80px;
+    margin: 0.5em;}
+  .gallerieright {width: 80px;
+    margin: 0.25em;}
+  .menu {width: 100px;
+    height: 70px;
+    border-radius: 15%;}
+  .menu:hover  {
+      background-color: saddlebrown;
+      text-shadow: 0 0 0em black;
+      color: white;}
+  #map {width: 100px;
+      height: 70px;}
+  .menutitre { width: 100px;
+        font-size: 1.2em;
+        margin-top: 20px;}
+  .menubouton {
+          color : rgb(219, 215, 195);}
+    .boite {
+            width: 99%;
+            margin-left: 1%;}
+    header {
+              padding-top: 17px;
+              padding-bottom: 20px;}
+    p {
+                width: 85%;
+                margin: 3% auto ;}
+    ul {
+                  padding-left: 3%;
+                  margin-left: 0%;}
+    #boutongo { width: 50%;
+                margin-left: 25%}
+    #boutongo:hover {width: 50%;
+                    margin-left: 25%;}
+    #mapfond { width: 80%;}
+    #mapfond:hover {
+      width: 85%;
+    }
+    .factol { width: 75px;}
+ .puce { width: 55px;}
+ .puce:hover { width: 75px;}
+          
+}
+
+@media (max-width: 400px) {
+        .menu { width: 55px;
+                height: 40px;}
+        #map { width: 55px;
+                  height: 40px;}
+        .menutitre { width: 55px;
+                    font-size: 0.7em;
+                    margin-top: 15px;}
+}
